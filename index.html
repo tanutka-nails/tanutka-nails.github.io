@@ -1,0 +1,560 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>tanutka_nails</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="Мастер маникюра">
+    <meta property="og:title" content="tanutka_nails">
+
+    <style>
+        #mssg_copyright, .btns, .btns a, .my_btn a, .user_img p:nth-child(3) {
+            text-align: center
+        }
+
+        #mssg_copyright a, .btns a, a {
+            text-decoration: none
+        }
+
+        button, hr, input {
+            overflow: visible
+        }
+
+        audio, canvas, progress, video {
+            display: inline-block
+        }
+
+        progress, sub, sup {
+            vertical-align: baseline
+        }
+
+        body, html, svg:not(:root) {
+            overflow: hidden
+        }
+
+        .container, .user_img, sub, sup {
+            position: relative
+        }
+
+        .layer, .user_img:before {
+            position: absolute;
+            left: 0;
+            right: 0
+        }
+
+        html {
+            line-height: 1.15
+        }
+
+        body {
+            margin: 0
+        }
+
+        article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+            display: block
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: .67em 0
+        }
+
+        figure {
+            margin: 1em 40px
+        }
+
+        hr {
+            box-sizing: content-box;
+            height: 0
+        }
+
+        .header, .layer, .my_btn a, .user_img img, legend {
+            box-sizing: border-box
+        }
+
+        code, kbd, pre, samp {
+            font-family: monospace, monospace;
+            font-size: 1em
+        }
+
+        abbr[title] {
+            border-bottom: none;
+            text-decoration: underline;
+            text-decoration: underline dotted
+        }
+
+        b, strong {
+            font-weight: bolder
+        }
+
+        dfn {
+            font-style: italic
+        }
+
+        mark {
+            background-color: #ff0;
+            color: #000
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub, sup {
+            font-size: 75%;
+            line-height: 0
+        }
+
+        sub {
+            bottom: -.25em
+        }
+
+        sup {
+            top: -.5em
+        }
+
+        audio:not([controls]) {
+            display: none;
+            height: 0
+        }
+
+        img {
+            border-style: none
+        }
+
+        button, input, optgroup, select, textarea {
+            font-family: sans-serif;
+            font-size: 100%;
+            line-height: 1.15;
+            margin: 0
+        }
+
+        button, select {
+            text-transform: none
+        }
+
+        [type=reset], [type=submit], button, html [type=button] {
+            -webkit-appearance: button
+        }
+
+        [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+            border-style: none;
+            padding: 0
+        }
+
+        [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+            outline: ButtonText dotted 1px
+        }
+
+        fieldset {
+            padding: .35em .75em .625em
+        }
+
+        legend {
+            color: inherit;
+            display: table;
+            max-width: 100%;
+            padding: 0;
+            white-space: normal
+        }
+
+        [type=checkbox], [type=radio] {
+            box-sizing: border-box;
+            padding: 0
+        }
+
+        [type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        [type=search] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px
+        }
+
+        [type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+
+        summary {
+            display: list-item
+        }
+
+        .layer #more, .my_btn, [hidden], template {
+            display: none
+        }
+
+        body, html {
+            font-family: Roboto, sans-serif;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            text-size-adjust: none;
+            height: 100%
+        }
+
+        ::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            min-width: 0;
+            padding-left: 0
+        }
+
+        a {
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects
+        }
+
+        .bg1 {
+            background: linear-gradient(134.72deg, #FFD529 0, #FD8440 100%);
+            background-size: cover
+        }
+
+        .bg2 {
+            background: linear-gradient(134.72deg, #FF0467 0, #FC7437 100%);
+            background-size: cover
+        }
+
+        .bg3 {
+            background: linear-gradient(134.72deg, #2B0096 0, #E9649B 100%);
+            background-size: cover
+        }
+
+        .bg4 {
+            background: linear-gradient(134.72deg, #00EAF8 0, #6D42EF 100%)
+        }
+
+        .bg5 {
+            background: linear-gradient(134.72deg, #FDE869 0, #00B1C1 100%);
+            background-size: cover
+        }
+
+        .bg6 {
+            background: linear-gradient(134.72deg, #252525 0, #000 100%);
+            background-size: cover
+        }
+
+        .btn_bg1 {
+            background: linear-gradient(134.72deg, #FEBC30 0, #FEA337 100%) !important
+        }
+
+        .btn_bg2 {
+            background: linear-gradient(134.72deg, #FE2957 0, #FD4A49 100%) !important
+        }
+
+        .btn_bg3 {
+            background: linear-gradient(134.72deg, #6A2198 0, #A43F99 100%) !important
+        }
+
+        .btn_bg4 {
+            background: linear-gradient(134.72deg, #23B5F6 0, #467FF3 100%) !important
+        }
+
+        .btn_bg5 {
+            background: linear-gradient(134.72deg, #A8D587 0, #5DC5A1 100%) !important
+        }
+
+        .btn_bg6 {
+            background: linear-gradient(134.74deg, #1F1F1F 0, #101010 100%) !important
+        }
+
+        .header {
+            z-index: 9999;
+            padding: 15px 5%;
+            float: left;
+            width: 100%
+        }
+
+        .header a:nth-child(1) img {
+            height: 58px
+        }
+
+        .header a:nth-child(2) {
+            float: right;
+            font-size: 12px;
+            letter-spacing: .2px;
+            font-weight: 500;
+            color: #000;
+            padding: 8px 14px;
+            border-radius: 2px;
+            border: .5px solid #fff;
+            margin-left: 10px;
+            background: #fff;
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
+            margin-top: 10px;
+            position: relative;
+            z-index: 9999;
+        }
+
+        .container {
+            width: 285px;
+            min-height: 100px;
+            height: 100%;
+            margin: auto;
+            border-radius: 4px;
+            background: 0 0;
+            max-width: 340px
+        }
+
+        .layer, .user_img:before {
+            background: rgba(255, 255, 255, .92)
+        }
+
+        .layer {
+            float: left;
+            box-shadow: 0 8px 8px 0 rgba(0, 0, 0, .05);
+            display: inline-table;
+            width: 100%;
+            max-width: 240px;
+            box-sizing: content-box;
+            max-height: 385px;
+            border-radius: 12px;
+            padding: 15px 22.5px;
+            min-height: 160px;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            -webkit-backdrop-filter: blur(2px)
+        }
+
+        .btns a img, input, textarea {
+            box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .13)
+        }
+
+        .user_img img, .user_img:before {
+            border-radius: 90px;
+            width: 90px;
+            height: 90px
+        }
+
+        .user_img {
+            margin-top: -62px
+        }
+
+        .user_img:before {
+            content: " ";
+            z-index: -1;
+            clip-path: polygon(0 0, 100% 0, 100% 48px, 0 48px);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 48px, 0 48px);
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .user_img img {
+            transform: scale(.94);
+            -webkit-transform: scale(.94);
+            position: relative;
+            display: block;
+            margin: 0 auto
+        }
+
+        .btns a, .btns a span {
+            display: inline-block
+        }
+
+        .user_img p:nth-child(2) {
+            color: #000;
+            font-weight: 500;
+            font-size: 22px;
+            margin-top: 10px;
+            margin-bottom: 0;
+            word-wrap: break-word;
+            text-align: center
+        }
+
+        .user_img p:nth-child(3) {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+            color: #7e7e7e;
+            width: 85%;
+            margin: 2px auto 14px;
+            word-wrap: break-word
+        }
+
+        .btns, .my_btn, .my_btn a {
+            width: 100%;
+            float: left
+        }
+
+        .my_btn {
+            transition: all .3s ease
+        }
+
+        .my_btn a {
+            border-radius: 6px;
+            color: #fff;
+            padding: 12px;
+            box-sizing: border-box;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 600;
+            z-index: 101;
+            position: relative;
+            transition: width .3s ease;
+            letter-spacing: .3px
+        }
+
+        .btns {
+            margin-top: 24px
+        }
+
+        .btns a {
+            outline: 0;
+            margin-bottom: 12px;
+            width: 60px;
+            margin-left: 25px
+        }
+
+        .btns a:nth-child(3n+1) {
+            margin-left: 0
+        }
+
+        .btns a img {
+            width: 60px;
+            height: 60px;
+            border-radius: 60px;
+            background: rgba(0, 0, 0, .1)
+        }
+
+        .btns a span {
+            margin-top: 6px;
+            font-size: 10px;
+            font-weight: 300;
+            text-transform: capitalize;
+            color: #7e7e7e
+        }
+
+        .show_btn .my_btn {
+            display: block
+        }
+
+        @-moz-document url-prefix() {
+            .layer {
+                margin-top: 60%
+            }
+        }
+
+        #mssg_copyright {
+            display: block;
+            float: left;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 0;
+            font-size: 12px
+        }
+
+        #mssg_copyright span {
+            color: #B2B2B2
+        }
+
+        #mssg_copyright a {
+            color: #298CE5;
+            margin: 0
+        }
+
+        input, textarea {
+            width: 100%;
+            font-size: 13px;
+            border-radius: 8px;
+            border: 0;
+            padding: 11px;
+            outline: 0
+        }
+
+        textarea {
+            overflow: auto;
+            resize: none;
+            height: 118px;
+            margin-top: 16px
+        }
+
+        input {
+            margin-top: -20px
+        }
+
+        .send {
+            margin-top: 16px
+        }
+
+        .send a {
+            width: 100%
+        }
+
+        1            </style>
+    <style>
+        .user_background {
+            background: url('./assets/1526572125.png');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+
+</head>
+<body class="user_background">
+<div class="header">
+
+</div>
+
+<div class="container">
+    <div class="layer  " id="layer">
+        <div class="user_img">
+            <img src="./assets/259517_1526571895.jpg">
+            <p>tanutka_nails</p>
+            <p>Мастер маникюра</p>
+        </div>
+
+
+        <div class="btns">
+            <a href="https://www.messenger.com/t/tanutkanail"
+               class="link messenger on" rel="messenger">
+                <img src="./img/messenger.svg">
+                <span>messenger</span>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=79952024511"
+               class="link whatsapp on" rel="whatsapp">
+                <img src="./img/whatsapp.svg">
+                <span>whatsapp</span>
+            </a>
+            <a href="tg://resolve?domain=Tanutka_nails"
+               class="link telegram on" rel="telegram">
+                <img src="./img/telegram.svg">
+                <span>telegram</span>
+            </a>
+            <a href="viber://chat?number=+79952024511"
+               class="link viber on" rel="viber">
+                <img src="./img/viber.svg">
+                <span>viber</span>
+            </a>
+            <a href="https://vk.com/im?sel=195789092" class="link vk on" rel="vk">
+                <img src="./img/vk.svg">
+                <span>vk</span>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    if (window.innerWidth >= 762) {
+        var i, link, links = document.getElementsByClassName("link");
+        for (l = links.length, i = 0; i < l; i++) {
+            var href = (link = links[i]).getAttribute("href");
+            link.setAttribute("href", href + "&type=desktop"), link.setAttribute("target", "_blank")
+        }
+        var btn = document.getElementById("btn");
+        null != btn && btn.setAttribute("target", "_blank")
+    }
+</script>
+
+
+</body>
+</html>
